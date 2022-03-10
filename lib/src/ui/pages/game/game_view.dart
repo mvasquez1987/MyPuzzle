@@ -13,6 +13,7 @@ class GameView extends StatelessWidget {
       child: Scaffold(
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Padding(
                 padding: EdgeInsets.all(20),

@@ -19,7 +19,11 @@ class PuzzleInteractor extends StatelessWidget {
           return Stack(
             children: state.puzzle.tiles
                 .map(
-                  (e) => PuzzleTile(),
+                  (e) => PuzzleTile(
+                    tile: e,
+                    size: tileSize,
+                    onTap: () => controller.onTileTapped(e),
+                  ),
                 )
                 .toList(),
           );
